@@ -57,7 +57,7 @@ export default function TypeWritter() {
             options={{
               autoStart: true,
               loop: true,
-              delay: 60,
+              delay: 70,
               strings: [
                 'Full Stack Web Developer',
                 'Computer Technician',

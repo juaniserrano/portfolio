@@ -1,18 +1,26 @@
 import React from 'react';
+import Footer from '../components/Footer';
+import Error from './Error';
 
 const divStyle = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginTop: '93px',
-  border: '5px solid lightblue',
+  marginTop: '66px',
+  border: '1px solid lightblue',
   textAlign: 'center',
+  fontSize: '3rem',
+  height: '95vh',
+  flexDirection: 'column',
 };
 
 export default function Contact() {
   return (
     <div>
-      <h1 style={divStyle}>Currently working on this page</h1>
+      <div style={divStyle}>
+        <Error />
+      </div>
+      <Footer />
     </div>
   );
 }

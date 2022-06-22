@@ -17,8 +17,9 @@ const NavMenuStyles = styled.nav`
   width: 100%;
   padding: 1rem 0;
   background: var(--dark-bg);
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   svg {
-    width: 2.5rem;
+    width: 2.2rem;
   }
   ul {
     max-width: 1200px;
@@ -42,9 +43,14 @@ const NavMenuStyles = styled.nav`
       color: var(--gray-1);
       outline: none;
       text-decoration: none;
+      align-items: center;
     }
-    .active {
+    li .active,
+    svg .active {
       color: var(--white);
+      background-color: #111;
+      border-radius: 12px;
+      fill: red !important;
     }
   }
   .mobile-menu-icon {
