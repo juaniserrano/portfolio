@@ -43,6 +43,8 @@ const TypeWritterStyles = styled.div`
     }
     h3 {
       justify-content: center;
+      font-size: 2rem;
+      white-space: nowrap;
     }
   }
 `;
@@ -58,11 +60,12 @@ export default function TypeWritter() {
               autoStart: true,
               loop: true,
               delay: 70,
+              deleteSpeed: 'natural',
               strings: [
                 'Full Stack Web Developer',
                 'Computer Technician',
                 'React Developer',
-                'Backend developer (Java, Spring)',
+                'Spring Boot Java Developer',
               ],
             }}
           />

@@ -38,12 +38,27 @@ const FooterStyles = styled.div`
     justify-content: center;
     width: 100%;
   }
-  .copyright .para {
-    font-size: 1.5rem;
+  .copyright p {
+    font-size: 2rem;
+    white-space: nowrap;
   }
-  .container a :hover,
-  .container li :hover {
+
+  .container .aLink :hover *,
+  .container .aLink :hover {
     color: #fff;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .copyright p {
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    text-align: center;
+    white-space: normal;
   }
 `;
 
@@ -113,9 +128,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <PText>
-          <nobr>
-            &copy; Copyright 2022 | Juan Serrano - Full Stack Web Developer
-          </nobr>
+          &copy; Copyright 2022 | Juan Serrano - Full Stack Web Developer
         </PText>
       </div>
     </FooterStyles>

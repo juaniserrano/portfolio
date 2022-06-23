@@ -13,7 +13,7 @@ export default function App() {
   if (loading)
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 20);
 
   return (
     <>
