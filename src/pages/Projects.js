@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer';
 import Error from './Error';
 
 const divStyle = {
@@ -21,7 +20,6 @@ export default function Projects() {
         <div style={divStyle}>
           <Error />
         </div>
-        <Footer />
       </div>
     </div>
   );

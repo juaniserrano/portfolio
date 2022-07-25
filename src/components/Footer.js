@@ -52,6 +52,15 @@ const FooterStyles = styled.div`
     .container {
       display: flex;
       flex-direction: column;
+      gap: 0rem;
+      & > div {
+        margin-top: 5rem;
+      }
+    }
+    .footer__col1 .para,
+    .footer__col1__title {
+      max-width: 100%;
+      text-align: center;
     }
   }
   .copyright p {
@@ -97,7 +106,7 @@ export default function Footer() {
               },
               {
                 title: '+54 9 11 5502-1895',
-                path: 'wa.me/5491155021895',
+                path: 'https://wa.me/5491155021895',
                 icon: <AiFillPhone />,
               },
             ]}
