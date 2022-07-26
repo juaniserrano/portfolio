@@ -44,7 +44,7 @@ export default function ProjectItem() {
       </Link>
       <div className="projectItem__info">
         <Link to="#">
-          <h3 className="projectItem__title"> Project 1</h3>
+          <h3 className="projectItem__title"> E-commerce SelftyShirt</h3>
         </Link>
         <p className="projectItem__desc">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio rerum

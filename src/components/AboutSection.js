@@ -16,7 +16,6 @@ const AboutSectionStyles = styled.div`
   .aboutSection__left,
   .aboutSection__right {
     flex: 1;
-    padding-left: 2rem;
   }
   .section-title {
     text-align: left;
