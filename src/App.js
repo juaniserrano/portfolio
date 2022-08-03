@@ -10,10 +10,9 @@ import Loader from './components/Loader';
 export default function App() {
   const [loading, setLoading] = useState(true);
 
-  if (loading)
-    setTimeout(() => {
-      setLoading(false);
-    }, 20);
+  setTimeout(() => {
+    setLoading(false);
+  }, 1000);
 
   return (
     <>

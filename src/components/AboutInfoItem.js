@@ -43,6 +43,7 @@ const AboutItemStyles = styled.div`
       justify-content: center;
       flex-direction: column;
       left: 0;
+      padding: 0 2rem;
       width: 100%;
     }
     .item {
@@ -50,6 +51,7 @@ const AboutItemStyles = styled.div`
     }
     .title {
       font-size: 2rem;
+      width: 100%;
     }
   }
 `;

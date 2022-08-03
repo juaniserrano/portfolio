@@ -64,7 +64,7 @@ const FooterStyles = styled.div`
     }
   }
   .copyright p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     overflow-wrap: break-word;
     text-align: center;
     white-space: normal;

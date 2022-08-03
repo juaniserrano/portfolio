@@ -1,4 +1,6 @@
 import React from 'react';
+import { AiFillGithub } from 'react-icons/ai';
+import { MdComputer } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import projectImg from '../assets/images/projectImg.webp';
@@ -28,6 +30,33 @@ const ProjectItemSytles = styled.div`
   .projectItem__desc {
     font-size: 1.8rem;
     font-family: 'RobotoMono Regular';
+    margin-top: 1rem;
+  }
+  .projectButton {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.8rem;
+    pointer: cursor;
+    color: var(--white);
+    align-items: center;
+    gap: 1rem;
+    border-radius: 8px;
+    background-color: dark;
+  }
+  svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .projectButton:hover *,
+  .projectButton:hover {
+    color: lightblue;
+  }
+  .project__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    align-items: center;
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
@@ -36,21 +65,35 @@ const ProjectItemSytles = styled.div`
   }
 `;
 
-export default function ProjectItem() {
+export default function ProjectItem({
+  img = projectImg,
+  title = 'Project Title',
+  desc = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+  link,
+  repo,
+}) {
   return (
     <ProjectItemSytles>
       <Link to="/projects" className="projectItem__img">
-        <img src={projectImg} alt="project" />
+        <img src={img} alt="project" />
       </Link>
       <div className="projectItem__info">
         <Link to="#">
-          <h3 className="projectItem__title"> E-commerce SelftyShirt</h3>
+          <h3 className="projectItem__title"> {title}</h3>
         </Link>
-        <p className="projectItem__desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio rerum
-          molestias esse minus! Sed est sequi error impedit dolores quasi iste
-          perferendis qui maxime. Aliquam animi expedita vel adipisci alias.
-        </p>
+        <p className="projectItem__desc">{desc}</p>
+        <div className="project__buttons">
+          {link && (
+            <a className="projectButton" href={link}>
+              Go to website <MdComputer />
+            </a>
+          )}
+          {repo && (
+            <a className="projectButton" href={repo}>
+              See Repo <AiFillGithub />
+            </a>
+          )}
+        </div>
       </div>
     </ProjectItemSytles>
   );
