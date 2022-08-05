@@ -93,6 +93,7 @@ export default function ProjectsSection() {
                     desc={project.desc}
                     link={project.link}
                     repo={project.repo}
+                    gitlab={project.gitlab}
                   />
                 </SwiperSlide>
               );

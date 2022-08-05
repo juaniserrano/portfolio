@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import PText from '../components/PText';
@@ -76,6 +76,9 @@ const AboutPageStyles = styled.div`
 `;
 
 export default function About() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <AboutPageStyles>
       <div className="container">
@@ -98,7 +101,13 @@ export default function About() {
                 quibusdam odit eveniet accusantium?
               </PText>
             </div>
-            <Button btnText="Download my CV" btnLink="#" />
+            <a href="https://docdro.id/I6fTZuG">
+              <Button
+                btnText="Download my CV"
+                btnLink="https://docdro.id/I6fTZuG"
+                external="true"
+              />
+            </a>
           </div>
           <div className="right">
             <img src={ImageBanner} alt="About me" />

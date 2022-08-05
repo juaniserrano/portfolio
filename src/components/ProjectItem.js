@@ -1,5 +1,5 @@
 import React from 'react';
-import { AiFillGithub } from 'react-icons/ai';
+import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
 import { MdComputer } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -22,6 +22,10 @@ const ProjectItemSytles = styled.div`
     background-color: var(--deep-dark);
     padding: 1rem;
     border-radius: 12px;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
   }
   .projectItem__title {
     font-size: 2.5rem;
@@ -54,7 +58,7 @@ const ProjectItemSytles = styled.div`
   .project__buttons {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     margin: 1rem 1rem;
     align-items: center;
   }
@@ -71,6 +75,7 @@ export default function ProjectItem({
   desc = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
   link,
   repo,
+  gitlab,
 }) {
   return (
     <ProjectItemSytles>
@@ -91,6 +96,11 @@ export default function ProjectItem({
           {repo && (
             <a className="projectButton" href={repo}>
               See Repo <AiFillGithub />
+            </a>
+          )}
+          {gitlab && (
+            <a className="projectButton" href={gitlab}>
+              See Repo <AiFillGitlab />
             </a>
           )}
         </div>

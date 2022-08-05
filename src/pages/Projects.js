@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import ProjectItem from '../components/ProjectItem';
 import SectionTitle from '../components/SectionTitle';
@@ -15,6 +15,9 @@ const ProjectsStyles = styled.div`
   }
 `;
 export default function Projects() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [projectData, setProjectData] = useState(ProjectInfo);
   return (
     <ProjectsStyles>
@@ -25,11 +28,12 @@ export default function Projects() {
         {projectData.map((item) => (
           <ProjectItem
             key={item.id}
-            title={item.title}
+            title={item.name}
             desc={item.desc}
             img={item.img}
             link={item.link}
             repo={item.repo}
+            gitlab={item.gitlab}
           />
         ))}
       </div>

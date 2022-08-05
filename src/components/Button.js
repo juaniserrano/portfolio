@@ -30,8 +30,20 @@ export default function Button({
   btnText = 'test',
   btnLink = 'test',
   outline = false,
+  external = false,
 }) {
-  return (
+  return external ? (
+    <ButtonStyle outline={outline} className="button-wrapper">
+      <a
+        href={btnLink}
+        className="button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {btnText}
+      </a>
+    </ButtonStyle>
+  ) : (
     <ButtonStyle outline={outline} className="button-wrapper">
       <Link className="button" to={btnLink}>
         {btnText}
