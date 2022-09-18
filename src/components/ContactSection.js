@@ -9,6 +9,10 @@ const ContactSectionStyle = styled.div`
   .contactSection__wrapper {
     padding-top: 8rem;
   }
+  p {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 `;
 export default function ContactSection() {
   return (
