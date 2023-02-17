@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
@@ -72,20 +73,17 @@ const AboutSectionStyles = styled.div`
 `;
 
 export default function AboutSection() {
+  const { t } = useTranslation('global');
   return (
     <AboutSectionStyles>
       <div className="container">
         <div className="aboutSection__left">
           <SectionTitle
-            subheading="👋🏼 Let me introduce myself"
+            subheading={t('aboutsection.subheading')}
             heading="Juan Serrano 👨🏻‍💻"
           />
           <TypeWritter />
-          <PText>
-            I am a full stack developer with a passion for creating beautiful
-            and functional web applications. I have a degree on Technical
-            Programmer and I also have passion for learning and problem solving.
-          </PText>
+          <PText>{t('aboutsection.paragraph')}</PText>
           <div className="aboutSection__buttons">
             <Button btnText="My Projects" btnLink="/projects" />
             <Button btnText="Read More" btnLink="/about" outline />

@@ -1,6 +1,7 @@
 import React from 'react';
 import Typewritter from 'typewriter-effect';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 const TypeWritterStyles = styled.div`
   text-align: center;
@@ -50,11 +51,13 @@ const TypeWritterStyles = styled.div`
 `;
 
 export default function TypeWritter() {
+  const { t } = useTranslation('global');
   return (
     <TypeWritterStyles className="typeWritterStyles">
       <div className="typeWritterStyles">
         <h3>
-          I am{'  '}
+          {t('typewriter.maintext')}
+          {'  '}
           <Typewritter
             options={{
               autoStart: true,
@@ -62,10 +65,10 @@ export default function TypeWritter() {
               delay: 70,
               deleteSpeed: 'natural',
               strings: [
-                'Full Stack Web Developer',
-                'Computer Technician',
-                'React Developer',
-                'Spring Boot Java Developer',
+                t('typewriter.option1'),
+                t('typewriter.option2'),
+                t('typewriter.option3'),
+                t('typewriter.option4'),
               ],
             }}
           />

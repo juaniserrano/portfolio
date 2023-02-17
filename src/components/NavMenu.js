@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
 import {
   TiBusinessCard,
   TiDeviceDesktop,
   TiHome,
   TiUser,
+  TiWorld,
 } from 'react-icons/ti';
 
 const NavMenuStyles = styled.nav`
@@ -23,6 +25,7 @@ const NavMenuStyles = styled.nav`
   }
   ul {
     max-width: 1200px;
+    justify-content: center;
     margin: 0 auto;
     width: 90%;
     text-align: center;
@@ -34,7 +37,8 @@ const NavMenuStyles = styled.nav`
         background-color: var(--deep-dark);
       }
     }
-    a {
+    a,
+    .language {
       display: flex;
       gap: 1rem;
       font-family: 'RobotoMono Regular';
@@ -44,6 +48,11 @@ const NavMenuStyles = styled.nav`
       outline: none;
       text-decoration: none;
       align-items: center;
+    }
+    .language {
+      right: 1rem;
+      top: 1rem;
+      position: absolute;
     }
     li .active,
     svg .active {
@@ -100,11 +109,15 @@ const NavMenuStyles = styled.nav`
         display: block;
         margin-bottom: 1rem;
       }
+      .language {
+        position: relative;
+      }
     }
   }
 `;
 
 export default function NavMenu() {
+  const [t, i18n] = useTranslation('global');
   const [showNav, setShowNav] = useState(false);
   return (
     <NavMenuStyles>
@@ -136,7 +149,8 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Home <TiHome />
+            {t('navmenu.home')}
+            <TiHome />
           </NavLink>
         </li>
         <li>
@@ -147,7 +161,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            About <TiUser />
+            {t('navmenu.about')} <TiUser />
           </NavLink>
         </li>
         <li>
@@ -158,7 +172,7 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Projects <TiDeviceDesktop />
+            {t('navmenu.projects')} <TiDeviceDesktop />
           </NavLink>
         </li>
         <li>
@@ -169,9 +183,19 @@ export default function NavMenu() {
             onKeyDown={() => setShowNav(!showNav)}
             tabIndex={0}
           >
-            Contact <TiBusinessCard />
+            {t('navmenu.contact')} <TiBusinessCard />
           </NavLink>
         </li>
+        <div className="language">
+          {' '}
+          {t('navmenu.language')} <TiWorld />
+          <button type="button" onClick={() => i18n.changeLanguage('en')}>
+            ENG
+          </button>
+          <button type="button" onClick={() => i18n.changeLanguage('es')}>
+            ESP
+          </button>
+        </div>
       </ul>
     </NavMenuStyles>
   );

@@ -1,0 +1,20 @@
+{
+  "aboutsection": {
+    "subheading": "👋🏼 Let me introduce myself",
+    "paragraph": "I am a full stack developer with a passion for creating beautiful and functional web applications. I have a degree on Technical Programmer and I also have passion for learning and problem solving."
+  },
+  "typewriter": {
+    "maintext": "I am",
+    "option1": "Full Stack Web Developer",
+    "option2": "Computer Technician",
+    "option3": "React Developer",
+    "option4": "Spring Boot Java Developer"
+  },
+  "navmenu": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "language": "Change language:"
+  }
+}

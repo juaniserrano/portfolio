@@ -1,0 +1,20 @@
+{
+  "aboutsection": {
+    "subheading": "👋🏼 Hola, mi nombre es",
+    "paragraph": "Soy Desarrolador Full Stack"
+  },
+  "typewriter": {
+    "maintext": "Soy",
+    "option1": "Desarrolador Full Stack",
+    "option2": "Tecnico superior en Sistemas",
+    "option3": "Desarrolador React",
+    "option4": "Desarrolador Spring Boot"
+  },
+  "navmenu": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": "Cambiar idioma:"
+  }
+}
