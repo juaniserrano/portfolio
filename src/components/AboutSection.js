@@ -85,8 +85,8 @@ export default function AboutSection() {
           <TypeWritter />
           <PText>{t('aboutsection.paragraph')}</PText>
           <div className="aboutSection__buttons">
-            <Button btnText="My Projects" btnLink="/projects" />
-            <Button btnText="Read More" btnLink="/about" outline />
+            <Button btnText={t('buttons.viewproject')} btnLink="/projects" />
+            <Button btnText={t('buttons.readmore')} btnLink="/about" outline />
           </div>
         </div>
         <div className="aboutSection__right">

@@ -1,7 +1,23 @@
 {
+  "navmenu": {
+    "home": "Inicio",
+    "about": "Sobre mi",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "language": "Cambiar idioma:"
+  },
+  "buttons": {
+    "viewproject": "Mis Proyectos",
+    "viewcode": "Ver codigo",
+    "viewdemo": "Ver demo",
+    "viewresume": "Ver CV",
+    "viewmore": "Ver mas",
+    "contact": "Contactame",
+    "readmore": "Leer mas"
+  },
   "aboutsection": {
     "subheading": "👋🏼 Hola, mi nombre es",
-    "paragraph": "Soy Desarrolador Full Stack"
+    "paragraph": "Soy Desarrolador Full Stack especializado en React y Profesor de Programacion Java, actualmente estoy en el 4to año de la Licenciatura en Sistemas en la Universidad Nacional de General Sarmiento en la cual tambien dicto las clases de Programacion II, te invito a conocer mas sobre mi y mis proyectos en esta pagina"
   },
   "typewriter": {
     "maintext": "Soy",
@@ -9,12 +25,5 @@
     "option2": "Tecnico superior en Sistemas",
     "option3": "Desarrolador React",
     "option4": "Desarrolador Spring Boot"
-  },
-  "navmenu": {
-    "home": "Inicio",
-    "about": "Sobre mi",
-    "projects": "Proyectos",
-    "contact": "Contacto",
-    "language": "Cambiar idioma:"
   }
 }

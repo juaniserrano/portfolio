@@ -16,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-transition-group": "^4.4.1",
+    "react-world-flags": "^1.5.1",
     "styled-components": "^5.2.2",
     "swiper": "^6.5.7",
     "typewriter-effect": "^2.18.2",

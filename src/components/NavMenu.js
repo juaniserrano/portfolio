@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 import { MdClose, MdMenu } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
+import Flag from 'react-world-flags';
+
 import {
   TiBusinessCard,
   TiDeviceDesktop,
@@ -29,6 +31,7 @@ const NavMenuStyles = styled.nav`
     margin: 0 auto;
     width: 90%;
     text-align: center;
+    display: flex;
     li {
       display: inline-block;
       border-radius: 8px;
@@ -48,11 +51,6 @@ const NavMenuStyles = styled.nav`
       outline: none;
       text-decoration: none;
       align-items: center;
-    }
-    .language {
-      right: 1rem;
-      top: 1rem;
-      position: absolute;
     }
     li .active,
     svg .active {
@@ -77,7 +75,28 @@ const NavMenuStyles = styled.nav`
   .navItems .closeNavIcon {
     display: none;
   }
+  .button-lang {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+    color: #ffffff;
+    border-radius: 8px;
+    width: 6rem;
+    font-size: 14px;
+    transition: transform 200ms, background 200ms;
+    :hover {
+      transform: translateY(-2px);
+    }
+    img {
+      width: 2.4rem;
+    }
+  }
   @media only screen and (max-width: 768px) {
+    ul {
+      display: block;
+    }
     padding: 0;
     .hide-item {
       display: none;
@@ -189,11 +208,19 @@ export default function NavMenu() {
         <div className="language">
           {' '}
           {t('navmenu.language')} <TiWorld />
-          <button type="button" onClick={() => i18n.changeLanguage('en')}>
-            ENG
+          <button
+            className="button-lang"
+            type="button"
+            onClick={() => i18n.changeLanguage('en')}
+          >
+            ENG <Flag code="usa" height="2" />
           </button>
-          <button type="button" onClick={() => i18n.changeLanguage('es')}>
-            ESP
+          <button
+            type="button"
+            className="button-lang"
+            onClick={() => i18n.changeLanguage('es')}
+          >
+            ESP <Flag code="esp" height="1" />
           </button>
         </div>
       </ul>
