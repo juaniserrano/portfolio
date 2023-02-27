@@ -6,6 +6,22 @@
     "contact": "Contacto",
     "language": "Cambiar idioma:"
   },
+  "projects": {
+    "name1": "test proyecto 1",
+    "desc1": "test descipcion 1",
+    "name2": "test proyecto 1",
+    "desc2": "test descipcion 1",
+    "name3": "test proyecto 1",
+    "desc3": "test descipcion 1",
+    "name4": "test proyecto 1",
+    "desc4": "test descipcion 1",
+    "name5": "test proyecto 1",
+    "desc5": "test descipcion 1",
+    "name6": "test proyecto 1",
+    "desc6": "test descipcion 1",
+    "name7": "test proyecto 1",
+    "desc7": "test descipcion 1"
+  },
   "buttons": {
     "viewproject": "Mis Proyectos",
     "viewcode": "Ver codigo",
@@ -13,7 +29,9 @@
     "viewresume": "Ver CV",
     "viewmore": "Ver mas",
     "contact": "Contactame",
-    "readmore": "Leer mas"
+    "readmore": "Leer mas",
+    "repo": "Ver repo",
+    "site": "Ir al sitio"
   },
   "aboutsection": {
     "subheading": "👋🏼 Hola, mi nombre es",

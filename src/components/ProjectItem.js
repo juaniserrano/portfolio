@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillGitlab } from 'react-icons/ai';
 import { MdComputer } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 import projectImg from '../assets/images/projectImg.webp';
 
 const ProjectItemSytles = styled.div`
@@ -37,7 +38,7 @@ const ProjectItemSytles = styled.div`
     margin-top: 1rem;
   }
   .projectButton {
-    display: inline-block;
+    display: flex;
     text-decoration: none;
     font-size: 1.8rem;
     pointer: cursor;
@@ -77,6 +78,7 @@ export default function ProjectItem({
   repo,
   gitlab,
 }) {
+  const { t } = useTranslation('global');
   return (
     <ProjectItemSytles>
       <Link to="/projects" className="projectItem__img">
@@ -84,23 +86,23 @@ export default function ProjectItem({
       </Link>
       <div className="projectItem__info">
         <Link to="#">
-          <h3 className="projectItem__title"> {title}</h3>
+          <h3 className="projectItem__title"> {t(title)} </h3>
         </Link>
-        <p className="projectItem__desc">{desc}</p>
+        <p className="projectItem__desc">{t(desc)}</p>
         <div className="project__buttons">
           {link && (
             <a className="projectButton" href={link}>
-              Go to website <MdComputer />
+              {t('buttons.site')} <MdComputer />
             </a>
           )}
           {repo && (
             <a className="projectButton" href={repo}>
-              See Repo <AiFillGithub />
+              {t('buttons.repo')} <AiFillGithub />
             </a>
           )}
           {gitlab && (
             <a className="projectButton" href={gitlab}>
-              See Repo <AiFillGitlab />
+              {t('buttons.repo')} <AiFillGitlab />
             </a>
           )}
         </div>

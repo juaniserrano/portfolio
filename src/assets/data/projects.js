@@ -10,60 +10,53 @@ import Portfolio from '../images/portfolio.png';
 const projects = [
   {
     id: uuidv4(),
-    name: 'Selfty Shirt - Web Ecommerce',
-    desc:
-      'Ecommerce website for a local clothing store. Built with Node.js, Express.js, Sequelize, EJS, pure CSS and Bootstrap.',
+    name: 'projects.name1',
+    desc: 'projects.desc1',
     img: selftyShirtImg,
     link: 'https://selftyshirt.herokuapp.com/',
     repo: 'https://github.com/juaniserrano/grupo_3_selftyshirt',
   },
   {
     id: uuidv4(),
-    name: 'Personal Portfolio',
-    desc:
-      'This is my personal portfolio. Built with React.js, and styled with styled-components. This shows some of the projects I have done and my skills.',
+    name: 'projects.name2',
+    desc: 'projects.desc2',
     img: Portfolio,
     link: 'https://selftyshirt.herokuapp.com/',
     repo: 'https://github.com/juaniserrano/grupo_3_selftyshirt',
   },
   {
     id: uuidv4(),
-    name: 'Pokeapp',
-    desc:
-      'Next.js Project that uses the PokeAPI to display Pokemon data, the styles are styled with styled-components and tailwindcss',
+    name: 'projects.name3',
+    desc: 'projects.desc3',
     img: pokemonAppImg,
     link: 'https://pokemon-next-js-juaniserrano.vercel.app/',
     repo: 'https://github.com/juaniserrano/pokemon-next-js',
   },
   {
     id: uuidv4(),
-    name: 'Dashboard Selfty Shirt',
-    desc:
-      'Dynamic dashboard for the Selfty Shirt Ecommerce website. Using API to collect data and display it in a chart in a friendly way to the user.',
+    name: 'projects.name4',
+    desc: 'projects.desc4',
     img: selftyShirtImg,
     repo: 'https://github.com/juaniserrano/SelftyShirt-Dashboard-React',
   },
   {
     id: uuidv4(),
-    name: 'WeatherApp',
-    desc:
-      'Simple app that show the weather based on your current location, using Weather API, Vanilla JS and Pure CSS',
+    name: 'projects.name5',
+    desc: 'projects.desc5',
     img: weatherAppImg,
     repo: 'https://github.com/juaniserrano/weather-app',
   },
   {
     id: uuidv4(),
-    name: 'Golf Java',
-    desc:
-      'This is a Java Game, that you basically play golf and the main objective is to show my knowledge of Java, OOP and collisions',
+    name: 'projects.name6',
+    desc: 'projects.desc6',
     img: Java,
     gitlab: 'https://gitlab.com/juanserrano/cardozo-misico-serrano',
   },
   {
     id: uuidv4(),
-    name: 'Letris',
-    desc:
-      'This is a Python Game, made with Pygame. The game is pretty similar to Tetris, but you need to make a word to score points',
+    name: 'projects.name7',
+    desc: 'projects.desc7',
     img: Python,
     gitlab: 'https://gitlab.com/santiagodelafuente/Letris',
   },

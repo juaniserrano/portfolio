@@ -6,6 +6,22 @@
     "contact": "Contact",
     "language": "Change language:"
   },
+  "projects": {
+    "name1": "Selfty Shirt - Web Ecommerce'",
+    "desc1": "Ecommerce website for a local clothing store. Built with Node.js, Express.js, Sequelize, EJS, pure CSS and Bootstrap.",
+    "name2": "Personal Portfolio",
+    "desc2": "This is my personal portfolio. Built with React.js, and styled with styled-components. This shows some of the projects I have done and my skills.",
+    "name3": "Pokeapp",
+    "desc3": "Next.js Project that uses the PokeAPI to display Pokemon data, the styles are styled with styled-components and tailwindcss",
+    "name4": "Dashboard Selfty Shirt",
+    "desc4": "Dynamic dashboard for the Selfty Shirt Ecommerce website. Using API to collect data and display it in a chart in a friendly way to the user.",
+    "name5": "WeatherApp",
+    "desc5": "Simple app that show the weather based on your current location, using Weather API, Vanilla JS and Pure CSS",
+    "name6": "Golf Java",
+    "desc6": "This is a Java Game, that you basically play golf and the main objective is to show my knowledge of Java, OOP and collisions",
+    "name7": "Letris",
+    "desc7": "This is a Python Game, made with Pygame. The game is pretty similar to Tetris, but you need to make a word to score points"
+  },
   "buttons": {
     "viewproject": "My Projects",
     "viewcode": "Ver codigo",
@@ -13,7 +29,9 @@
     "viewresume": "Ver CV",
     "viewmore": "Ver mas",
     "contact": "Contactame",
-    "readmore": "Read More"
+    "readmore": "Read More",
+    "repo": "See repo",
+    "site": "Go to website"
   },
   "aboutsection": {
     "subheading": "👋🏼 Let me introduce myself",
